@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+:root{
+	--main-color: #111c31;
+	--sec-color: #87bffd;
+}
+
+.bg--main{
+	background-color: var(--main-color);
+}
+
+html{
+	background-color: #f6f6f6;
+}
+
+.wrapper{
+	min-height: 100vh;
+	background-color: #f6f6f6;
+}
+
+header{
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	background-color: #fff;
+	height: 60px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	font-size: .9em;
+}
+
+.row-wrapp{
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.nav-menu{
+	list-style: none;
+}
+
+.nav-menu li a{
+	text-decoration: none;
+	display: block;
+	color: #111;
+}
+
+.head-right i{
+	color: #222;
+}
+
+/*Notif*/
+.i-notif{
+	text-decoration: none;
+	position: relative;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i-notif:hover{
+	background-color: #f6f6f6;
+}
+
+.i-notif span{
+	top: 0;
+	right: 0px;
+	display: block;
+	position: absolute;
+	background-color: #ff3d3d;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: .7em;
+}
+
+.dropdown-menu.dm-notif{
+	width: 400px;
+	min-height: 70vh;
+	max-height: 70vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.wrapp-notif{
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding: 2% 5%;
+	min-height: 60px;
+	text-decoration: none;
+	color: #111;
+	cursor: pointer;
+}
+
+.wrapp-notif:hover{
+	color: #111;
+	background-color: #f6f6f6;
+}
+
+.wrapp-notif .left{
+	font-size: .8em;
+	min-width: 150px;
+	display: flex;
+	align-items: center;
+}
+
+.wrapp-notif .fs{
+	font-size: .8em;
+}
+
+.wrapp-notif .waktu-tindak{
+	color: rgba(0, 0, 0, .5);
+	font-size: .7em;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+}
+
+nav{
+	width: 90%;
+	min-height: 300px;
+	color: #fff;
+}
+
+nav ul{
+	list-style: none;
+/*	border: 1px solid red;*/
+}
+
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	min-width: 150px;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+	border-radius: 6px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #222;
+	border-bottom: 2px solid var(--sec-color);
+	transition: .3s;
+}
+
+nav ul li a:hover{
+	transform: translateY(-8px);
+}
+
+.btn.btn-cuti{
+	background-color: #a8fd86;
+	color: var(--main-color);
+}
+
+.btn.btn-cuti:hover{
+	background-color: #27b2f3;
+	color: #fff;
+}
+
+.btn.btn-fs{
+	font-size: .7em;
+}
+
+.data--count{
+	min-width: 200px;
+	background-color: var(--sec-color);
+	border: 3px solid #fff;
+	padding: 15px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-bottom: 0;
+	color: #fff;
+}
+
+.data--count h4{
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.w90{
+	width: 90%;
+}
+
+main{
+	margin-top: 100px;
+	min-height: 100vh;
+}
+
+.tb-peg{
+	font-size: .8em;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.table-sec-color{
+	background-color: var(--sec-color);
+}
+
+.table.tb-peg th{
+	font-weight: 600;
+}
+
+.i-aksi a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 4px;
+	cursor: pointer;
+}
+
+.i-aksi .i-del{
+	background-color: #ed3d3d;
+}
+
+.i-aksi .i-del:hover{
+	background-color: #d03737;
+	color: #fff;
+}
+
+.i-aksi .i-ed{
+	background-color: #27b2f3;
+}
+
+.i-aksi .i-ed:hover{
+	background-color: #239ed8;
+	color: #fff;
+}
+
+footer{
+	width: 100%;
+	font-size: .9em;
+	height: 50px;
+	color: #333;
+}
+
+
+/*PEGAWAI*/
+.wrapp-tabs{
+	min-height: 100vh;
+}
+
+.buttonTabs{
+	list-style: none;
+}
+
+.buttonTabs button{
+	border: none;
+	padding: 8px 16px;
+}
+
+.wrapp-tabs .tabContent{
+/*	border: 1px solid rgba(0, 0, 0, .1);*/
+	padding: 2%;
+	display: none;
+}
+
+
+.wrapp-btn-img{
+	background-color: red;
+	position: relative;
+}
+
+.form-control.btn-img-edit{
+	position: absolute;
+}
+
+.left-p{
+	height: 100%;
+}
